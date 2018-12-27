@@ -1,0 +1,5 @@
+lookup_options:
+  workstation::asdf::packages:
+    merge: deep
+  workstation::mac::homebrew::packages:
+    merge: deep

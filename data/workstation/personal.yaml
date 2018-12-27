@@ -1,0 +1,89 @@
+workstation::user: call
+workstation::shell: fish
+
+workstation::mac::homebrew::packages:
+  taps:
+  - rockyluke/devops
+  - puppetlabs/puppet
+  formulae:
+  - awscli
+  - augeas
+  - bats
+  - csvkit
+  - docker
+  - ffmpeg
+  - fish
+  - geoip
+  - graphviz
+  - helmfile
+  - heroku
+  - htop
+  - hugo
+  - hyperkit
+  - imagemagick
+  - jq
+  - jx
+  - kubectx
+  - mkvtoolnix
+  - mysql
+  - nmap
+  - openssl
+  - pipenv
+  - pkg-config
+  - postgresql
+  - pulumi
+  - ripgrep
+  - sops
+  - sqlite
+  - telnet
+  - terraform
+  - tmux
+  - tree
+  - wget
+  casks:
+  - 1password
+  - 1password-cli
+  - aegisub
+  - anki
+  - apache-directory-studio
+  - autopkgr
+  - beamer
+  - disk-inventory-x
+  - gpg-suite
+  - google-cloud-sdk
+  - iterm2
+  - keepingyouawake
+  - pacifist
+  - packages
+  - pdk
+  - puppet-bolt
+  - shiftit
+  - slack
+  - spotify
+  - sublime-text
+  - suspicious-package
+  - the-unarchiver
+  - tomighty
+  - tunnelblick
+  - unetbootin
+  - visual-studio-code
+  - vlc
+
+workstation::asdf::globals:
+  python: 'system'
+  kubectl: '1.12.4'
+  minikube: '0.32.0'
+  helm: '2.12.0'
+
+workstation::dotfiles:
+- file: .minikube/config/config.json
+  parents:
+  - .minikube/
+  - .minikube/config
+  format: prettyjson
+  data:
+    vm-driver: hyperkit
+    bootstrapper: kubeadm
+    kubernetes-version: v1.12.4
+    cpus: 2
+    memory: 4096
