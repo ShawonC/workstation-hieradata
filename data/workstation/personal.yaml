@@ -4,6 +4,7 @@ workstation::mac::homebrew::packages:
   taps:
   - rockyluke/devops
   - puppetlabs/puppet
+  - heroku/brew
   formulae:
   - awscli
   - augeas
@@ -15,7 +16,7 @@ workstation::mac::homebrew::packages:
   - geoip
   - graphviz
   - helmfile
-  - heroku/brew/heroku
+  - heroku
   - htop
   - hyperkit
   - imagemagick
