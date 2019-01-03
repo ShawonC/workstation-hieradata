@@ -15,12 +15,11 @@ workstation::mac::homebrew::packages:
   - geoip
   - graphviz
   - helmfile
-  - heroku
+  - heroku/brew/heroku
   - htop
   - hyperkit
   - imagemagick
   - jq
-  - jx
   - kubectx
   - mkvtoolnix
   - mysql
