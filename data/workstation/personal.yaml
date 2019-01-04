@@ -12,7 +12,6 @@ workstation::mac::homebrew::packages:
   - csvkit
   - docker
   - ffmpeg
-  - fish
   - geoip
   - graphviz
   - helmfile
