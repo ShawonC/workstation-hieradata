@@ -119,3 +119,7 @@ workstation::dotfiles:
     kubernetes-version: v1.12.4
     cpus: 2
     memory: 4096
+
+workstation::repos:
+  /opt/workstation-hieradata:
+    source: https://github.com/call/workstation-hieradata.git
