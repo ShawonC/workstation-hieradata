@@ -1,5 +1,8 @@
 workstation::shell: fish
 
+workstation::linux::apt::packages:
+- gcc
+
 workstation::mac::homebrew::packages:
   taps:
   - rockyluke/devops
