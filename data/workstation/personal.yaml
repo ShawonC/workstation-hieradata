@@ -2,7 +2,12 @@ workstation::shell: fish
 
 workstation::linux::apt::packages:
 - gcc
-- fish
+- git
+- vim
+- zlib1g-dev
+- python-dev
+- libssl-dev
+- libreadline-dev
 
 workstation::mac::homebrew::packages:
   taps:
